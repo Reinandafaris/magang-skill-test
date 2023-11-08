@@ -8,9 +8,12 @@ const Footer = () => {
         left: '0',
         backgroundColor: 'rgba(0, 0, 0, 0.2)',
         color: 'black',
-      }}
-    >
-      <div className="text-center p-3">© 2023 Footer</div>
+      }}>
+      <div
+        className="text-center text-footer p-3"
+        style={{ color: 'white' }}>
+        © 2023 Footer
+      </div>
     </footer>
   );
 };

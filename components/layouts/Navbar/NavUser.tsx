@@ -2,7 +2,9 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <nav className="navbar  fixed-top navbar-expand-lg position-fixed">
+    <nav
+      className="navbar  fixed-top navbar-expand-lg position-fixed"
+      style={{ backgroundColor: '#abc0cf' }}>
       <div className="container">
         <Link
           className="navbar-brand"

@@ -1,11 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { Inter } from 'next/font/google';
-import styles from '@/styles/Home.module.css';
 import Navbar from '../../components/layouts/Navbar/NavUser';
 import Footer from '../../components/layouts/Footer';
-
-const inter = Inter({ subsets: ['latin'] });
+import herologo from '../../public/herologo.png';
+import Script from 'next/script';
 
 export default function Home() {
   return (
@@ -26,86 +24,36 @@ export default function Home() {
         />
       </Head>
       <Navbar />
-      <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer">
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+      <main>
+        <div className="wrapper-home">
+          <div className="container">
+            <div className="row ">
+              <div className="col wrap-left">
+                <div className="row left-front">
+                  <div className="row action-home"></div>
+                  <div className="row action-home2">Company Profile</div>
+                  <div className="row action-paragraph">
+                    Aplikasi Perusahaan Yang Dapat Meng-input Data Dan Dapat Tersimpan Kedalam Database, Data Yang Tersimpan Di Dalam Database Dapat Dimunculkan Kepada User Aplikasi Melalui Fitur Admin.
+                  </div>
+                </div>
+                <div className="row left-front"></div>
+              </div>
+              <div className="col wrap-left">
+                <div className="row left-front">
+                  <div className="row action-home"></div>
+                  <div className="row action-home3">
+                    <Image
+                      src={herologo}
+                      alt="logo"
+                    />
+                  </div>
+                </div>
+                <div className="row left-front"></div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer">
-            <h2>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p>Find in-depth information about Next.js features and&nbsp;API.</p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer">
-            <h2>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer">
-            <h2>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p>Discover and deploy boilerplate example Next.js&nbsp;projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer">
-            <h2>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p>Instantly deploy your Next.js site to a shareable URL with&nbsp;Vercel.</p>
-          </a>
-        </div>
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></Script>
       </main>
       <Footer />
     </>
