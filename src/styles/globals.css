@@ -136,7 +136,7 @@ a {
   padding-top: 2rem;
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   .action-home2 {
     text-align: start;
     justify-content: start;
@@ -250,4 +250,4 @@ a {
   .featured-image {
     max-width: 100px;
   }
-}
+} */
