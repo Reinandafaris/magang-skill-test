@@ -9,7 +9,7 @@ const index = () => {
       <Navbar />
       <div className="test-main-left">
         <h1>Company Profile</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolorum rerum tenetur quibusdam voluptatem, temporibus cumque excepturi id molestias totam?</p>
+        <p>Aplikasi Perusahaan Yang Dapat Meng-input Data Dan Dapat Tersimpan Kedalam Database, Data Yang Tersimpan Di Dalam Database Dapat Dimunculkan Kepada User Aplikasi Melalui Fitur Admin.</p>
       </div>
       <div className="test-main-right">
         <Image

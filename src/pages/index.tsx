@@ -23,39 +23,23 @@ export default function Home() {
           href="/favicon.ico"
         />
       </Head>
-      <Navbar />
       <main>
-        <div className="wrapper-home">
-          <div className="container">
-            <div className="row ">
-              <div className="col wrap-left">
-                <div className="row left-front">
-                  <div className="row action-home"></div>
-                  <div className="row action-home2">Company Profile</div>
-                  <div className="row action-paragraph">
-                    Aplikasi Perusahaan Yang Dapat Meng-input Data Dan Dapat Tersimpan Kedalam Database, Data Yang Tersimpan Di Dalam Database Dapat Dimunculkan Kepada User Aplikasi Melalui Fitur Admin.
-                  </div>
-                </div>
-                <div className="row left-front"></div>
-              </div>
-              <div className="col wrap-left">
-                <div className="row left-front">
-                  <div className="row action-home"></div>
-                  <div className="row action-home3">
-                    <Image
-                      src={herologo}
-                      alt="logo"
-                    />
-                  </div>
-                </div>
-                <div className="row left-front"></div>
-              </div>
-            </div>
+        <div className="warapper-test">
+          <Navbar />
+          <div className="test-main-left">
+            <h1>Company Profile</h1>
+            <p>Aplikasi Perusahaan Yang Dapat Meng-input Data Dan Dapat Tersimpan Kedalam Database, Data Yang Tersimpan Di Dalam Database Dapat Dimunculkan Kepada User Aplikasi Melalui Fitur Admin.</p>
           </div>
+          <div className="test-main-right">
+            <Image
+              src={herologo}
+              alt="logo"
+            />
+          </div>
+          <Footer />
         </div>
         <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></Script>
       </main>
-      <Footer />
     </>
   );
 }
