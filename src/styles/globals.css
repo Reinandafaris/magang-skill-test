@@ -148,6 +148,10 @@ a {
   button.btn {
     margin: 0 !important;
   }
+
+  .cardz {
+    height: auto;
+  }
 }
 
 .test-main-left {
