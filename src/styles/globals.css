@@ -152,6 +152,14 @@ a {
   .cardz {
     height: auto;
   }
+
+  .tabel-home {
+    padding: 5rem 0 0 0;
+  }
+
+  .tabel-home td {
+    word-break: break-all;
+  }
 }
 
 .test-main-left {

@@ -8,9 +8,9 @@ export default function Home({ contact }: { contact: Contact[] }) {
     <>
       <Navbar />
       <div className="wrapper">
-        <div className="tabel-home rounded-3">
-          <table className="table rounded-3">
-            <thead className="table-warning rounded-3">
+        <div className="tabel-home ">
+          <table className="table ">
+            <thead className="table-warning">
               <tr>
                 <th className="col-2">#</th>
                 <th className="col">Name</th>
