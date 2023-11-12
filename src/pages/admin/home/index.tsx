@@ -12,22 +12,21 @@ const Index = () => {
 
   return (
     <>
-      <div className="d-flex">
-        <NavAdmin />
-
-        <div className="wrapper">
-          <div className="wrapper2">
-            <div className="form-floating">
-              <textarea
-                className="form-control"
-                placeholder="Leave a Description here"
-                id="floatingTextarea2"
-                style={{ height: 100, width: 503 }}
-                value={deskripsi}
-                onChange={(e) => setDeskripsi(e.target.value)}
-              />
-              <label htmlFor="floatingTextarea2">Deskripsi</label>
-            </div>
+      <div className="wrapper-admin">
+        <div className="wrapper-admin-left">
+          <NavAdmin />
+        </div>
+        <div className="wrapper-admin-right">
+          <div className="form-floating">
+            <textarea
+              className="form-control"
+              placeholder="Leave a Description here"
+              id="floatingTextarea2"
+              // style={{ height: 100, width: 503 }}
+              value={deskripsi}
+              onChange={(e) => setDeskripsi(e.target.value)}
+            />
+            <label htmlFor="floatingTextarea2">Deskripsi</label>
           </div>
           <div
             onClick={handleSubmit}
